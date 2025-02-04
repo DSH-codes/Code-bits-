@@ -5,7 +5,20 @@
 
 
 
-def flatten(array):
+def flatten(array: list):
+
+    """Flatten a chaotically nested list.
+
+    This function takes a nested list, which may
+    contain other lists of varying depths,
+    and flattens it into a single list of elements
+
+    :arg array: A list to be flatten
+    :type array: list
+
+    :returns: The flattened list
+    :rtype: list
+    """
 
     result = []                                                 # final result list to out
 
