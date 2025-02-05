@@ -19,8 +19,9 @@ def all_index(seq: str | list, char: str):
 
     """
 
-    indices = []                                # a list to collect indices
-    twin = seq
+    seq = "".join(seq) if type(seq) == list else seq        # convert the sequence into a string, if it is a list
+    indices = []                                            # a list to collect indices
+    twin = seq                                              # a copy to perform editing on
 
     for i in twin:
 
@@ -32,6 +33,6 @@ def all_index(seq: str | list, char: str):
     return indices
 
 
-s = all_index("I am writing a code", "a")
+s = all_index(list("I am writing a code"), "a")
 
 print(s)
