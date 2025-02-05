@@ -5,7 +5,7 @@
 
 
 
-def flatten(array: list):
+def flatten(array: list) -> list:
 
     """Flatten a chaotically nested list.
 
