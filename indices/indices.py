@@ -19,4 +19,19 @@ def all_index(seq: str | list, char: str):
 
     """
 
-    ...
+    indices = []                                # a list to collect indices
+    twin = seq
+
+    for i in twin:
+
+        if i == char:
+
+            indices.append(seq.index(i))
+            seq = seq.replace(i, "-", 1)
+
+    return indices
+
+
+s = all_index("I am writing a code", "a")
+
+print(s)
